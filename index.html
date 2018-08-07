@@ -2,19 +2,21 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>ci'argun</title>
-
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css'
-    />
-
-    <link rel="stylesheet" href="./bootstrap.min.css">
-
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/blog-home.css" rel="stylesheet">
+    <!-- Make some magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.3/vue.min.js"></script>
+    <script src="./scripts/data.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'
     />
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <style>
       body {
         font-family: 'Comfortaa', cursive;
@@ -24,231 +26,130 @@
   </head>
 
   <body>
-
-    <div class="container">
-      <!-- ======================================================================= -->
-      <!-- Header -->
-      <!-- ======================================================================= -->
-      <div class="jumbotron">
-        <h1 class="display-3">ci'argun</h1>
-        <hr class="my-2">
-
-        <p>mi skami ciska sepi'o la bangu'a</p>
-        <p class="lead">
-          <a class="btn btn-secondary" href="https://phreno.github.io/lojban/banguha/" role="button">lo nu do vitke la bangu'a</a>
-        </p>
-
-        <hr class="my-2">
-        <p>coi do</p>
-        <p>
-          I'm Phreno, currently learning some lojban stuff (again). This is about shorts translations
-          I've made to get some training. I'm not English and not Lojbanist so there
-          are mistakes.
-        </p>
-        <hr class="my-2">
-        <small>
-          Don't hesitate to mail me to report ugly bugs and mistakes, and give your feedback.
-          <ul class="list-group">
-            <li class="list-group-item">
-              <i class="fa fa-twitter mr-4" aria-hidden="true"></i> @phreno </li>
-            <li class="list-group-item">
-              <i class="fa fa-bug mr-4"></i> Issues on
-              <a href="https://github.com/Phreno/lojban/issues">
-                github</a>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-send mr-4" aria-hidden="true"></i> losgoomy@gmail.com</li>
-          </ul>
-        </small>
-      </div>
-      <div class="row">
-        <div class="col">
-
-          <!-- ======================================================================= -->
-          <!-- Je ne regrette rien -->
-          <!-- ======================================================================= -->
-          <div class="card">
-            <iframe class="rounded-top" src="https://www.youtube.com/embed/Q3Kvu6Kgp88" frameborder="0"
-              allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <div class="card-body bg-dark">
-              <blockquote class="blockquote">
-                <p>Je ne regrette rien</p>
-                <footer class="card-blockquote">Édith Piaf
-                </footer>
-              </blockquote>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">mi xenru noda</h3>
-              <pre>
-                .inaku .inoda .inoda
-                .inaku .i mi xenru noda
-                .inaku le xamgu be mi
-                .inaku le xlali
-                .irode'u.a'ucu'isai
-                
-                .inaku .inoda .inoda
-                .inaku .i mi xenru noda
-                .i velve'u je lumci je nalmo'i
-                .ia'ucu'isai le purci
-                
-                .i lei mi morji selkansa mi
-                lo nu le mi menli 
-                cortu je xamgu cu selfagri  
-                .inaku mi nitcu di'u
-                
-                .i loi melbi prami zgike 
-                cu roroi cliva se lumci
-                .i mi xrukla le cfari
-                
-                .inaku .inoda .inoda
-                .inaku .i mi xenru noda
-                .inaku le xamgu be mi
-                .inaku le xlali
-                .irode'u.a'ucu'isai
-                
-                .inaku .inoda .inoda
-                .inaku .i mi xenru noda
-                .imu'i le mi jmive .e lei mi gleki
-                cu cfari kansa do
-              </pre>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Je ne regrette rien</h3>
-              <pre>
-                Non, rien de rien
-                Non, je ne regrette rien
-                Ni le bien qu'on m'a fait
-                Ni le mal - tout ça m'est bien égal!
-                
-                Non, rien de rien
-                Non, je ne regrette rien
-                C'est payé, balayé, oublié
-                Je m'en fous du passé!
-                
-                Avec mes souvenirs
-                J'ai allumé le feu
-                Mes chagrins, mes plaisirs
-                Je n'ai plus besoin d'eux!
-                
-                Balayé les amours
-                Avec leurs trémolos
-                Balayés pour toujours
-                Je repars à zéro
-                
-                Non, rien de rien
-                Non, je ne regrette rien
-                Ni le bien qu'on m'a fait
-                Ni le mal - tout ça m'est bien égal!
-                
-                Non, rien de rien
-                Non, je ne regrette rien
-                Car ma vie, car mes joies
-                Aujourd'hui, ça commence avec toi!
-              </pre>
-            </div>
-          </div>
-
-
-          <!-- ======================================================================= -->
-          <!-- La vie d'artiste -->
-          <!-- ======================================================================= -->
-
-          <div class="card">
-            <iframe class="rounded-top" src="https://www.youtube.com/embed/GQEWXl19ErE" frameborder="0"
-              allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <div class="card-body bg-dark">
-              <blockquote class="blockquote">
-                <p>La vie d'artiste</p>
-                <footer class="card-blockquote">Léo Ferré
-                </footer>
-              </blockquote>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">le larcu jmive</h3>
-              <pre> 
-                .ivivavu le mi cunso pu penmi do 
-                .i xu do morji
-                .i mi'o djuno noda 
-                .i mi'o prami ri 
-                .i xu na go'i 
-                .iku'i mi'o.ei slabu lisri krici
-                .i mi pu dunda roda do
-                .i di'u se cumki lo sanga .e lo senva 
-                .i do pu krici le mi zifre
-                .i xu le zifre pu cumki le mi'o verba jmive 
-                .i le do pensi naca mintu di'u 
-
-                .i lo nu le fanmo masti cu jetfu djedi xrukla 
-                .inaku le mi'o skina vanci 
-                .inaku le mi misno
-                .i lo mi'o citka cu cunso 
-                .i do cu viska lo nu mi morji 
-                .i de'u klaku be lo badri
-                .di'u cusku le mi'o fliba 
-                .i loi do su'o xamgu djedi ba stali 
-                .ixu do goi le pindi prami ba zanfri 
-                .i de'u sutra bajra 
-                
-                .i do bazi cliva 
-                .i mi'o bazu fanmo jmive 
-                .iuinai mi'o cu lifri mi'a .e do'o 
-                .i do ca lebna le zgike zmiku 
-                .i mi ralte le pipno 
-                .i mi ranji le larcu jmive 
-                .ibaku lo djuno be ma 
-                .i lo drata prenu goi lo juxre ba tcidu le mi cmene lo gubnoi tcita 
-                .ijy. tavla do lei mi misno 
-                .iku'i do.uinai poi ke'a djuno ba cusku lu .a'ucu'isai .igo'i 
-              </pre>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">La vie d'artiste</h3>
-              <pre>
-                Je t'ai rencontrée par hasard,
-                Ici, ailleurs ou autre part,
-                Il se peut que tu t'en souviennes.
-                Sans se connaître on s'est aimés,
-                Et même si ce n'est pas vrai,
-                Il faut croire à l'histoire ancienne.
-                Je t'ai donné ce que j'avais
-                De quoi chanter, de quoi rêver.
-                Et tu croyais en ma bohème,
-                Mais si tu pensais à vingt ans
-                Qu'on peut vivre de l'air du temps,
-                Ton point de vue n'est plus le même.
-                
-                Cette fameuse fin du mois
-                Qui depuis qu'on est toi et moi,
-                Nous revient sept fois par semaine
-                Et nos soirées sans cinéma,
-                Et mon succès qui ne vient pas,
-                Et notre pitance incertaine.
-                Tu vois je n'ai rien oublié
-                Dans ce bilan triste à pleurer
-                Qui constate notre faillite.
-                " Il te reste encore de beaux jours
-                Profites-en mon pauvre amour,
-                Les belles années passent vite."
-                
-                Et maintenant tu vas partir,
-                Tous les deux nous allons vieillir
-                Chacun pour soi, comme c'est triste.
-                Tu peux remporter le phono,
-                Moi je conserve le piano,
-                Je continue ma vie d'artiste.
-                Plus tard sans trop savoir pourquoi
-                Un étranger, un maladroit,
-                Lisant mon nom sur une affiche
-                Te parlera de mes succès,
-                Mais un peu triste toi qui sais
-                " Tu lui diras que je m'en fiche...
-                que je m'en fiche..."
-              </pre>
-            </div>
+    <!-- APPLICATION -->
+    <div id="application" style="background:url('./pics/carbon-bg.svg'); background-color: #2C1511">
+      <!-- NAVIGATION @auto-fold here -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary shadow-lg">
+        <div class="container">
+          <a class="navbar-brand text-white" v-text="view.title" style="cursor:pointer" @click="goto('main')"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item" :class="{ active: ( article === values.selected ) }" v-for="article of values.articles">
+                <a class="nav-link" style="cursor:pointer" @click="goto(article)" v-text="article.action"></a>
+              </li>
+              <li class="nav-item" :class="{ active: ( isHomeTab ) }">
+                <a class="nav-link" style="cursor:pointer" @click="goto('main')">
+                  <i class="fa fa-home    ">
+                  </i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+      <!-- /NAVIGATION -->
+      <!-- MAIN CONTAINER -->
+      <div id="articleContainer" class="container bg-light shadow-lg">
+        <div class="row">
+          <template v-if="isHomeTab">
+            <!-- HOME @auto-fold here -->
+            <div v-if="!isEmpty" class="col-md-8 bg-white mt-3">
+              <div class="card mb-5" v-for="article of articleFilter">
+                <img class="card-img-top" :src="article.image" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text text-right" v-html="article.imageBadge"></p>
+                  <h2 class="card-title" v-text="article.headline"></h2>
+                  <!-- <p class="card-text" v-text="article.articleBodySanitized.substring(0, 300)+'...'"></p> -->
+                  <a class="btn btn-primary text-white" @click="goto(article)" v-text="view.readMore"></a>
+                </div>
+                <div class="card-footer text-muted"> Posted on {{article.datePublished}} by
+                  <a v-text="article.author"></a>
+                </div>
+              </div>
+            </div>
+            <!-- /HOME -->
+            <!-- ERROR @auto-fold here -->
+            <div v-if="isEmpty" class="col-md-8 bg-danger">
+              <div class="card mb-5 mt-2">
+                <img class="card-img-top" src="./pics/error.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text text-right">
+                    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;"
+                      href="https://unsplash.com/@braydona?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                      target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Braydon Anderson">
+                      <span style="display:inline-block;padding:2px 3px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;"
+                          viewBox="0 0 32 32">
+                          <title>unsplash-logo</title>
+                          <path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path>
+                        </svg>
+                      </span>
+                      <span style="display:inline-block;padding:2px 3px;">Braydon Anderson</span>
+                    </a>
+                  </p>
+                  <h2 class="card-title text-danger"> Oups! </h2>
+                  <p class="card-text"> Aucun article n'est actuellement disponible.</p>
+                  <hr>
+                  <p class="card-text text-body">Si vous effectuez une recherche, vous pouvez modifier votre saisie
+                    pour améliorer les résultats</p>
+                  <a class="btn btn-primary text-white" @click="goto('main')"> Revenir à l'accueil</a>
+                </div>
+              </div>
+            </div>
+            <!-- /ERROR -->
+            <!-- SIDEBAR @auto-fold here -->
+            <div class="col-md-4 border-left border-muted bg-light">
+              <ul class="navbar-nav m-1 position-fixed">
+                <li :class="{ active: ( isHomeTab ) }" class="nav-item">
+                  <a @click="goto('main')" class="nav-link" v-text="view.home" style="cursor:pointer"
+                    :style="{ fontWeight: ( isHomeTab ) ? 'bold': '' }"></a>
+                </li>
+                <li v-for="article of values.articles" class="nav-item" :class="{ active: ( article === values.selected ) }">
+                  <a @click="goto(article)" href="#" class="nav-link text-secondary" v-text="article.action"
+                    style="cursor:pointer" :style="{ fontWeight: ( article === values.selected ) ? 'bold': '' }"></a>
+                </li>
+                <!-- <li>
+                  <div v-if="isHomeTab" class="input-group mt-5">
+                    <input v-model="values.search" type="text" class="form-control" :placeholder="view.searchPlaceholder">
+                    <span class="input-group-btn"> </span>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+            <!-- /SIDEBAR -->
+          </template>
+          <!-- ARTICLE DETAIL @auto-fold here -->
+          <div v-else class="col-md-12">
+            <div class="card mb-5 mt-3">
+              <img class="card-img-top" :src="values.selected.image" alt="values.selected.action">
+              <div class="card-body">
+                <p class="card-text text-right" v-html="values.selected.imageBadge"></p>
+                <h2 class="card-title" v-text="values.selected.headline"></h2>
+                <h3 class="card-title" v-text="values.selected.alternativeHeadline"></h3>
+                <p class="card-text" v-html="values.selected.articleBody"></p>
+                <a class="btn btn-primary text-white" @click="goto('main')" v-text="view.home"></a>
+              </div>
+              <div class="card-footer text-muted"> Posted on {{ values.selected.datePublished }} by
+                <a v-text="values.selected.author"></a>
+              </div>
+            </div>
+          </div>
+          <!-- /ARTICLE DETAIL -->
+        </div>
       </div>
-    </div>
+      <!-- /MAIN CONTAINER -->
+      <!-- FOOTER @auto-fold here -->
+      <nav class="bg-dark fixed-bottom border-top border-secondary shadow-lg">
+        <p class="m-0 mr-5 text-right text-white" v-text="view.copyright"></p>
+      </nav>
+      <!-- /FOOTER -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="./scripts/vue-manager.js" charset="utf-8"></script>
   </body>
 
 </html>
